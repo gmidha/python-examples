@@ -10,6 +10,10 @@ def main():
                  'Sony'  : 876987 }
     print( f" { my_dict [ 'Tony' ] } " )
     print( f" { hash('Rohit') } " )
+    my_dict[ 'India' ] = 123456
+    print(f" {my_dict}")
+    my_dict[ 'India' ] = 324567
+    print(f" {my_dict}")
 
 if __name__ == "__main__":
     main()
