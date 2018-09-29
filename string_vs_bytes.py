@@ -12,5 +12,9 @@ def main():
     s = "This is my string"
     print(f"{s}")
 
+    #print(s+b) #this will not work because print expects a string and we are having bytes. We will have to decode it first.
+    s2 = b.decode('utf-8')
+    print(s+s2)
+
 if __name__ == "__main__":
     main()
