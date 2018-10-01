@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# This program demonstrates Inheritance of Animal class.
+# This program demonstrates Inheritance of Animal class with new methods in Child Class
 
 class Animal:
 
