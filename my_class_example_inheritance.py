@@ -28,6 +28,7 @@ class Duck(Animal):
         self._type = 'duck'
         if 'type' in kwargs: del kwargs['type']
         super().__init__(**kwargs) #Call inherited class's init method
+        
 
 class Kitten(Animal):
 
@@ -36,6 +37,11 @@ class Kitten(Animal):
         self._type = 'Kitten'
         if 'type' in kwargs: del kwargs['type']
         super().__init__(**kwargs) #Call inherited class's init method
+    
+    def drink_or_eat(self, s):
+
+        print(f"{self.name()} will now drink/eat {s}")
+
 
 def main():
     a0 = Kitten(name='kity', sound='rwar')
@@ -43,6 +49,7 @@ def main():
 
     print(a1)
     print(a0)
+    a0.drink_or_eat('Milk')
 
 if __name__ == '__main__':
     main()
